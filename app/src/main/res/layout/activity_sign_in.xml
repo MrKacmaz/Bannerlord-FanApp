@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="44dp"
+        android:shadowColor="#FFFFFF"
+        android:text="@string/sign_up_to_see_updates_and_news_from_the_game_world"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:textColor="#BFFFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/userName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/name"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHint="#8CFFF1E0"
+        android:textColorLink="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toTopOf="@+id/userSurname"
+        app:layout_constraintEnd_toEndOf="@+id/userSurname"
+        app:layout_constraintStart_toStartOf="@+id/userSurname"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/userSurname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/surname"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHint="#8CFFF1E0"
+        android:textColorLink="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toTopOf="@+id/userMail"
+        app:layout_constraintEnd_toEndOf="@+id/userMail"
+        app:layout_constraintStart_toStartOf="@+id/userMail"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <EditText
+        android:id="@+id/userMail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/mail_address"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHint="#8CFFF1E0"
+        android:textColorLink="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toTopOf="@+id/passwordFirst"
+        app:layout_constraintEnd_toEndOf="@+id/passwordFirst"
+        app:layout_constraintStart_toStartOf="@+id/passwordFirst"
+        app:layout_constraintTop_toBottomOf="@+id/userSurname" />
+
+    <EditText
+        android:id="@+id/passwordFirst"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/passwordV1"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHint="#8CFFF1E0"
+        android:textColorLink="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toTopOf="@+id/passwordSecond"
+        app:layout_constraintEnd_toEndOf="@+id/passwordSecond"
+        app:layout_constraintStart_toStartOf="@+id/passwordSecond"
+        app:layout_constraintTop_toBottomOf="@+id/userMail" />
+
+    <EditText
+        android:id="@+id/passwordSecond"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/confirm_password"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHint="#8CFFF1E0"
+        android:textColorLink="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/passwordFirst" />
+
+    <Button
+        android:id="@+id/button3"
+        android:onClick="signUpButtonPressed"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:text="@string/sign_up"
+        app:backgroundTint="@color/backGround_8"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordSecond" />
+
+    <Button
+        android:id="@+id/button4"
+        android:onClick="backButtonPressed"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="34dp"
+        android:textColor="@color/white"
+        android:text="@string/have_an_account_log_in"
+        app:backgroundTint="@color/backGround_7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

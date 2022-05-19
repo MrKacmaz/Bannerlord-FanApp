@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/m_b_fan_club"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/log_in_btn"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="logInButtonPressed"
+        android:text="@string/log_in_V1"
+        app:backgroundTint="@color/backGround_7"
+        app:layout_constraintBottom_toTopOf="@+id/textForgetPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/mail_address"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHint="#8CFFF1E0"
+        android:textColorLink="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMessage" />
+
+    <TextView
+        android:id="@+id/textForgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="@string/forgot_password"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:onClick="forgotPasswordTextPressed"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in_btn"
+        app:layout_constraintEnd_toEndOf="@+id/log_in_btn"
+        app:layout_constraintStart_toStartOf="@+id/log_in_btn"
+        app:layout_constraintTop_toBottomOf="@+id/log_in_btn" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/passwordV1"
+        android:inputType="textPassword"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHint="#8CFFF1E0"
+        android:textColorLink="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toTopOf="@+id/log_in_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <Button
+        android:id="@+id/sign_in_btn"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="145dp"
+        android:onClick="signInButtonPressed"
+        android:text="@string/sign_up"
+        app:backgroundTint="@color/backGround_4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textForgetPassword" />
+</androidx.constraintlayout.widget.ConstraintLayout>

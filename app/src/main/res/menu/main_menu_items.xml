@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/home">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/fragment_main"
+                    android:icon="@drawable/ic_menu_home"
+                    android:title="@string/main" />
+                <item
+                    android:id="@+id/fragment_groups"
+                    android:icon="@drawable/ic_menu_groups"
+                    android:title="@string/groups" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/account">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/fragment_menubar_profile"
+                    android:icon="@drawable/ic_menu_account"
+                    android:title="@string/profile" />
+                <item
+                    android:id="@+id/fragment_settings"
+                    android:icon="@drawable/ic_menu_settings"
+                    android:title="@string/settings" />
+                <item
+                    android:id="@+id/fragment_logout"
+                    android:icon="@drawable/ic_menu_log_out"
+                    android:title="@string/log_out" />
+            </group>
+        </menu>
+    </item>
+
+</menu>
